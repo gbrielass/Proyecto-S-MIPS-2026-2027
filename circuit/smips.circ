@@ -9,9 +9,6 @@
     <tool name="Pin">
       <a name="appearance" val="classic"/>
     </tool>
-    <tool name="Tunnel">
-      <a name="facing" val="north"/>
-    </tool>
   </lib>
   <lib desc="#Gates" name="1"/>
   <lib desc="#Plexers" name="2"/>
@@ -2436,5 +2433,58 @@
     <a name="circuit" val="Datapath"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(1060,210)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="s_op"/>
+      <a name="width" val="3"/>
+    </comp>
+    <comp lib="0" loc="(170,640)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="S_operacion"/>
+      <a name="width" val="3"/>
+    </comp>
+    <comp lib="0" loc="(190,470)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="S1"/>
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(190,560)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="S2"/>
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(200,470)" name="Tunnel">
+      <a name="label" val="S1"/>
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(200,560)" name="Tunnel">
+      <a name="label" val="S2"/>
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(200,640)" name="Tunnel">
+      <a name="label" val="s_op"/>
+      <a name="width" val="3"/>
+    </comp>
+    <comp lib="0" loc="(370,170)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="S1"/>
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(370,190)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="S2"/>
+      <a name="width" val="5"/>
+    </comp>
+    <comp loc="(1280,170)" name="ALU"/>
+    <comp loc="(590,170)" name="Register_File"/>
+    <wire from="(1280,30)" to="(1280,170)"/>
+    <wire from="(170,640)" to="(200,640)"/>
+    <wire from="(190,470)" to="(200,470)"/>
+    <wire from="(190,560)" to="(200,560)"/>
+    <wire from="(340,230)" to="(370,230)"/>
+    <wire from="(340,30)" to="(1280,30)"/>
+    <wire from="(340,30)" to="(340,230)"/>
+    <wire from="(590,170)" to="(1060,170)"/>
+    <wire from="(590,190)" to="(1060,190)"/>
   </circuit>
 </project>
